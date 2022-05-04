@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/db7df9ee2c.js" crossorigin="anonymous"></script>
+    <title>Gyan Vihar University</title>
+</head>
+<body>
+    <header class="sub-header">
+        <nav>
+            <a href="index.html"><img src="image/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="course.html">Course</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+
+        </nav>
+
+        <h1>About Us</h1>
+    </header>
+
+    <!-- ------------------------------About------------------------ -->
+    <section class="about-us">
+
+        <div class="row">
+            <div class="about-col">
+                <h1>We are India's Largest University</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur necessitatibus facere debitis, alias quisquam, corrupti quas modi dolores recusandae eveniet fugit et, ex delectus at architecto sequi! Aut eos eaque earum error? Facere qui quia impedit maxime neque dolorem harum iusto expedita in excepturi ex culpa, corporis deleniti laboriosam itaque?</p>
+                <a href="#" class="btn-primary red-btn">Explore Now</a>
+            </div>
+            <div class="about-col">
+                <img src="./image/about.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+<!-- ----------------------Footer----------------------- -->
+    <footer class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores, iusto. Repellendus aut atque odio <br> molestiae repudiandae, at quod fugit facere non et? Dolore, atque eveniet.</p>
+        <div class="social-icons">
+            <i class="fa fa-facebook fa-2x"></i>
+            <i class="fa fa-instagram fa-2x"></i>
+            <i class="fa fa-twitter fa-2x"></i>
+            <i class="fa fa-linkedin fa-2x"></i>
+            <i class="fa fa-github fa-2x"></i>
+        </div>
+        <p>&copy; 2022 - All Rights Reserved.</p>
+    </footer>
+
+
+
+
+
+<!-- --------JavaScript for Menu------------- -->
+    <script>
+        var navLinks=document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right="0";
+        }
+        function hideMenu(){
+            navLinks.style.right="-15rem";
+        }
+    </script>
+</body>
+</html>
